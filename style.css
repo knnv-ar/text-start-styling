@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
 :root {
   --gradient-01: linear-gradient(90deg, darkblue, red);
   --gradient-02: linear-gradient(45deg,
@@ -7,6 +9,20 @@
       #ff9671,
       #ffc75f,
       #f9f871);
+  --dark: #00bd9d;
+  --light: #8bd7d2;
+  --white: #fffbfa;
+  --image: url(./grass.webp);
+
+  --ff-ss: 'Merriweather Sans', sans-serif;
+  --ff-s: 'Merriweather', serif;
+  --fc: var(var(--dark));
+
+  /* section padding */
+  --sec-pad: 150px 0;
+  --mv: 800px;
+  --v: 90%;
+  --gap: 2rem;
 }
 
 html {
@@ -24,6 +40,18 @@ main {
   margin-inline: auto;
 }
 
+.display-text {
+  /* display: block; */
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 6rem;
+  text-align: center;
+  background-image: var(--image);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+}
+
+
 img,
 picture,
 svg {
@@ -37,7 +65,7 @@ h3 {
   text-wrap: balance;
 }
 
-h2 {
+h3 {
   background-image: var(--gradient-02);
   background-size: 400%;
   background-clip: text;
