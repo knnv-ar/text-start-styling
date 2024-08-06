@@ -20,3 +20,16 @@ svg {
   max-width: 100%;
   display: block;
 }
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.gradient-text {
+  background-image:
+    linear-gradient(90deg, red, darkblue);
+  background-clip: text;
+  color: transparent;
+}
