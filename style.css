@@ -11,7 +11,6 @@ body {
 main {
   width: min(65ch, 100% - 4rem);
   margin-inline: auto;
-  border: 1px solid red;
 }
 
 img,
@@ -32,4 +31,39 @@ h3 {
     linear-gradient(90deg, red, darkblue);
   background-clip: text;
   color: transparent;
+}
+
+.quotes-section {
+  text-align: center;
+  margin-inline: auto;
+  margin: 4rem 0;
+  background: var(--dark-gradient);
+}
+
+.quotes {
+  position: relative;
+  isolation: isolate;
+  padding: 0.25rem 2rem;
+  margin: 2rem;
+
+}
+
+.quotes::before {
+  content: open-quote;
+  font-family: serif;
+  font-weight: 900;
+  font-size: 15rem;
+  color: #dadada;
+  position: absolute;
+  z-index: -1;
+  top: -8.5rem;
+  left: -2.5rem;
+}
+
+.quotes::after {
+  content: no-close-quote;
+}
+
+.quotes p {
+  font-style: italic;
 }
