@@ -1,3 +1,14 @@
+:root {
+  --gradient-01: linear-gradient(90deg, darkblue, red);
+  --gradient-02: linear-gradient(45deg,
+      #845ec2,
+      #d65db1,
+      #ff6f91,
+      #ff9671,
+      #ffc75f,
+      #f9f871);
+}
+
 html {
   color-scheme: light dark;
 }
@@ -26,9 +37,27 @@ h3 {
   text-wrap: balance;
 }
 
+h2 {
+  background-image: var(--gradient-02);
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+  animation: grad-animation 5s infinite alternate;
+}
+
+@keyframes grad-animation {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
 .gradient-text {
-  background-image:
-    linear-gradient(90deg, red, darkblue);
+  /* background-image: linear-gradient(90deg, red, darkblue); */
+  background-image: var(--gradient-01);
   background-clip: text;
   color: transparent;
 }
